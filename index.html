@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <script
+      src="https://kit.fontawesome.com/d80069c1ff.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Single Playlist Screen</title>
+  </head>
+
+  <body>
+    <!-- Navigation header with logo and search, login -->
+    <div id="navHeader" class="beFlex">
+      <div id="logoAndFav" class="beFlex">
+        <div>
+          <img src="logo.jpg" alt="logoImage" width="60" />
+        </div>
+        <div class="verticalcenter">
+          <div class="fontHeader">Ninja</div>
+          <div class="fontHeader bolder">Studio</div>
+        </div>
+        <div class="fontHeader verticalcenter">
+          Favourties
+        </div>
+      </div>
+
+      <div id="searchAndProfile" class="beFlex">
+        <div id="searchbar" class="beFlex verticalcenter">
+          <div id="searchIcon">
+            <i class="fa-solid fa-magnifying-glass" style="color: #f7f7f7;"></i>
+          </div>
+          <div id="search" class="verticalcenter">
+            <input
+              type="text"
+              name="Search"
+              placeholder="Search"
+              style="color: white;"
+            />
+          </div>
+          <div id="mic" class="verticalcenter">
+            <i class="fa-solid fa-microphone" style="color: #f7f7f7;"></i>
+          </div>
+        </div>
+
+        <div id="notification" class="verticalcenter">
+          <i class="fa-solid fa-bell" style="color: #fcfcfd;"></i>
+        </div>
+        <div id="profile">
+          <img src="profileImage.jpg" alt="profileimage" width="50" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Main content with playlist options and queue -->
+    <main class="beFlex">
+      <section class="">
+        <!-- playlist -->
+        <div id="playlist" class="beFlexSpace-spaceAround">
+          <div id="playlist1" class="playlist verticalcenter">
+            <a href="#">
+              <img src="playlist1.jpg" alt="playlist1Image" />
+            </a>
+          </div>
+
+          <div id="playlist2" class="playlist verticalcenter">
+            <a href="#">
+              <img src="playlist2.jpg" alt="playlist2Image" />
+            </a>
+          </div>
+
+          <div id="playlist3" class="playlist verticalcenter">
+            <a href="#">
+              <img src="playlist3.jpg" alt="playlist3" />
+            </a>
+          </div>
+        </div>
+
+        <!-- latestrelease -->
+        <div id="latestRelease" class="">
+          <div id="latestReleaseHeader" class="fontHeader">
+            Latest Release
+          </div>
+
+          <div class="">
+            <div id="latestReleaseRow1" class="beFlex latestReleaseRow">
+              <div
+                id="latestRelease1"
+                class="lastestReleaseSong beFlexSpace-between"
+              >
+                <div class="latestReleaseSongLogo">
+                  <a href="#playerLayout"
+                    ><img src="master-poster.jpg" alt="songImage" class=""
+                  /></a>
+
+                  <div class="play">
+                    <i
+                      class="fa-solid fa-play fa-2xl"
+                      style="color: #ffffff;"
+                    ></i>
+                  </div>
+                </div>
+
+                <div id="" class="songNameAndDate verticalcenter">
+                  <p class="bolder">
+                    Master
+                  </p>
+                  <p>
+                    Aug 11,2017
+                  </p>
+                </div>
+
+                <div id="" class="popDownAndDuration">
+                  <div>
+                    <a href="#songOptionLeft" class=""
+                      ><i
+                        class="fa-solid fa-ellipsis fa-2xl"
+                        style="color: #eee7e7;"
+                      ></i
+                    ></a>
+                  </div>
+
+                  <div id="songOptionLeft">
+                    <div>
+                      <a href="#" class="">Play Now</a>
+                    </div>
+                    <div>
+                      <a href="#">Add To Queue</a>
+                    </div>
+
+                    <div>
+                      <a href="#">Add To Favourite</a>
+                    </div>
+
+                    <div>
+                      <a href="#">Get Info</a>
+                    </div>
+                  </div>
+                  <p>4.44</p>
+                </div>
+              </div>
+
+              <div
+                id="latestRelease2"
+                class="lastestReleaseSong beFlexSpace-between"
+              >
+                <div class="latestReleaseSongLogo">
+                  <a href="#playerLayout"
+                    ><img src="master-poster.jpg" alt="songImage" class=""
+                  /></a>
+
+                  <div class="play">
+                    <i
+                      class="fa-solid fa-play fa-2xl"
+                      style="color: #ffffff;"
+                    ></i>
+                  </div>
+                </div>
+
+                <div id="" class="songNameAndDate verticalcenter">
+                  <p class="bolder">
+                    Master
+                  </p>
+                  <p>
+                    Aug 11,2017
+                  </p>
+                </div>
+
+                <div id="" class="popDownAndDuration">
+                  <div>
+                    <a href="#songOptionRight" class=""
+                      ><i
+                        class="fa-solid fa-ellipsis fa-2xl"
+                        style="color: #eee7e7;"
+                      ></i
+                    ></a>
+                  </div>
+
+                  <div id="songOptionRight">
+                    <div>
+                      <a href="#" class="">Play Now</a>
+                    </div>
+                    <div>
+                      <a href="#">Add To Queue</a>
+                    </div>
+
+                    <div>
+                      <a href="#">Add To Favourite</a>
+                    </div>
+
+                    <div>
+                      <a href="#">Get Info</a>
+                    </div>
+                  </div>
+                  <p>4.44</p>
+                </div>
+              </div>
+            </div>
+
+            <div id="latestReleaseRow2" class="beFlex latestReleaseRow">
+              <div
+                id="latestRelease5"
+                class="lastestReleaseSong beFlexSpace-between"
+              >
+                <div class="latestReleaseSongLogo">
+                  <a href="#playerLayout"
+                    ><img src="master-poster.jpg" alt="songImage" class=""
+                  /></a>
+
+                  <div class="play">
+                    <i
+                      class="fa-solid fa-play fa-2xl"
+                      style="color: #ffffff;"
+                    ></i>
+                  </div>
+                </div>
+
+                <div id="" class="songNameAndDate verticalcenter">
+                  <p class="bolder">
+                    Master
+                  </p>
+                  <p>
+                    Aug 11,2017
+                  </p>
+                </div>
+
+                <div id="" class="popDownAndDuration">
+                  <div>
+                    <a href="#songOptionLeft" class=""
+                      ><i
+                        class="fa-solid fa-ellipsis fa-2xl"
+                        style="color: #eee7e7;"
+                      ></i
+                    ></a>
+                  </div>
+
+                  <div id="songOptionLeft">
+                    <div>
+                      <a href="#" class="">Play Now</a>
+                    </div>
+                    <div>
+                      <a href="#">Add To Queue</a>
+                    </div>
+
+                    <div>
+                      <a href="#">Add To Favourite</a>
+                    </div>
+
+                    <div>
+                      <a href="#">Get Info</a>
+                    </div>
+                  </div>
+                  <p>4.44</p>
+                </div>
+              </div>
+
+              <div
+                id="latestRelease4"
+                class="lastestReleaseSong beFlexSpace-between"
+              >
+                <div class="latestReleaseSongLogo">
+                  <a href="#playerLayout"
+                    ><img src="master-poster.jpg" alt="songImage" class=""
+                  /></a>
+
+                  <div class="play">
+                    <i
+                      class="fa-solid fa-play fa-2xl"
+                      style="color: #ffffff;"
+                    ></i>
+                  </div>
+                </div>
+
+                <div id="" class="songNameAndDate verticalcenter">
+                  <p class="bolder">
+                    Master
+                  </p>
+                  <p>
+                    Aug 11,2017
+                  </p>
+                </div>
+
+                <div id="" class="popDownAndDuration">
+                  <div>
+                    <a href="#songOptionRight" class=""
+                      ><i
+                        class="fa-solid fa-ellipsis fa-2xl"
+                        style="color: #eee7e7;"
+                      ></i
+                    ></a>
+                  </div>
+
+                  <div id="songOptionRight" class="songOptionBottom">
+                    <div>
+                      <a href="#" class="">Play Now</a>
+                    </div>
+                    <div>
+                      <a href="#">Add To Queue</a>
+                    </div>
+
+                    <div>
+                      <a href="#">Add To Favourite</a>
+                    </div>
+
+                    <div>
+                      <a href="#">Get Info</a>
+                    </div>
+                  </div>
+                  <p>4.44</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Artist -->
+        <div id="popularArtist" class="">
+          <div id="latestReleaseHeader" class="fontHeader">
+            Popular Artists
+          </div>
+
+          <div id="artistList">
+            <div id="artist1" class="artist">
+              <a href="playlist.html"><img src="ar.jpg" /></a>
+              <p>Ar Rahman</p>
+            </div>
+
+            <div id="artist2" class="artist">
+              <a href="playlist.html"><img src="ar.jpg" /></a>
+              <p>Ar Rahman</p>
+            </div>
+
+            <div id="artist3" class="artist">
+              <a href="playlist.html"><img src="ar.jpg" /></a>
+              <p>Ar Rahman</p>
+            </div>
+
+            <div id="artist4" class="artist">
+              <a href="playlist.html"><img src="ar.jpg" /></a>
+              <p>Ar Rahman</p>
+            </div>
+
+            <div id="artist5" class="artist">
+              <a href="playlist.html"><img src="ar.jpg" /></a>
+              <p>Ar Rahman</p>
+            </div>
+
+            <div id="artist6" class="artist">
+              <a href="playlist.html"><img src="ar.jpg" /></a>
+              <p>Ar Rahman</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Station -->
+        <div id="station">
+          <div id="stationList" class="beFlex">
+            <div id="moodLogo">
+              <img src="mood.jpg" />
+            </div>
+
+            <div id="moodList">
+              <div id="mood1" class="mood">
+                <a href="#">
+                  <img src="retro.jpg" />
+                </a>
+                <div class="moodText">
+                  Retro
+                </div>
+              </div>
+
+              <div id="mood2" class="mood">
+                <a href="#">
+                  <img src="retro.jpg" />
+                </a>
+                <div class="moodText">
+                  Retro
+                </div>
+              </div>
+
+              <div id="mood3" class="mood">
+                <a href="#">
+                  <img src="retro.jpg" />
+                </a>
+                <div class="moodText">
+                  Retro
+                </div>
+              </div>
+
+              <div id="mood4" class="mood">
+                <a href="#">
+                  <img src="retro.jpg" />
+                </a>
+                <div class="moodText">
+                  Retro
+                </div>
+              </div>
+
+              <div id="mood5" class="mood">
+                <a href="#">
+                  <img src="retro.jpg" />
+                </a>
+                <div class="moodText">
+                  Retro
+                </div>
+              </div>
+
+              <div id="mood6" class="mood">
+                <a href="#">
+                  <img src="retro.jpg" />
+                </a>
+                <div class="moodText">
+                  Retro
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Genre -->
+        <div id="genreList" class="beFlex">
+          <div id="genre1" class="genre">
+            <img src="dj.jpg" />
+            <div id="genreText" class="genreText">
+              Electronic
+            </div>
+          </div>
+
+          <div id="genre2" class="genre">
+            <img src="dj.jpg" />
+            <div id="genreText" class="genreText">
+              Electronic
+            </div>
+          </div>
+
+          <div id="genre3" class="genre">
+            <img src="dj.jpg" />
+            <div id="genreText" class="genreText">
+              Electronic
+            </div>
+          </div>
+        </div>
+
+        <!-- Latest English -->
+        <div id="lastestEnglish">
+          <div id="latestReleaseHeader" class="fontHeader">
+            Latest English
+          </div>
+
+          <div id="englistList" class="beFlexSpace-between">
+            <div id="englist1" class="songEnglishAndHindi">
+              <a href="#playerLayout">
+                <img src="english.jpg" class="songLogo" />
+              </a>
+              <p class="bolder marginless">
+                Hall Of Frame
+              </p>
+              <p class="marginless">
+                Aug 11,2017
+              </p>
+            </div>
+
+            <div id="englist2" class="songEnglishAndHindi">
+              <a href="#playerLayout">
+                <img src="english.jpg" class="songLogo" />
+              </a>
+              <p class="bolder marginless">
+                Hall Of Frame
+              </p>
+              <p class="marginless">
+                Aug 11,2017
+              </p>
+            </div>
+
+            <div id="englist3" class="songEnglishAndHindi">
+              <a href="#playerLayout">
+                <img src="english.jpg" class="songLogo" />
+              </a>
+              <p class="bolder marginless">
+                Hall Of Frame
+              </p>
+              <p class="marginless">
+                Aug 11,2017
+              </p>
+            </div>
+
+            <div id="englist4" class="songEnglishAndHindi">
+              <a href="#playerLayout">
+                <img src="english.jpg" class="songLogo" />
+              </a>
+              <p class="bolder marginless">
+                Hall Of Frame
+              </p>
+              <p class="marginless">
+                Aug 11,2017
+              </p>
+            </div>
+
+            <div id="englist1=5" class="songEnglishAndHindi">
+              <a href="#playerLayout">
+                <img src="english.jpg" class="songLogo" />
+              </a>
+              <p class="bolder marginless">
+                Hall Of Frame
+              </p>
+              <p class="marginless">
+                Aug 11,2017
+              </p>
+            </div>
+
+            <div id="englist6" class="songEnglishAndHindi">
+              <a href="#playerLayout">
+                <img src="english.jpg" class="songLogo" />
+              </a>
+              <p class="bolder marginless">
+                Hall Of Frame
+              </p>
+              <p class="marginless">
+                Aug 11,2017
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Latesh Hindi -->
+        <div id="lastestHindi">
+          <div id="latestReleaseHeader" class="fontHeader">
+            Latest Hindi
+          </div>
+
+          <div id="hindiList" class="beFlexSpace-between">
+            <div id="hindi1" class="songEnglishAndHindi">
+              <a href="#playerLayout">
+                <img src="hindi.jpg" class="songLogo" />
+              </a>
+              <p class="bolder marginless">
+                Tu Hai
+              </p>
+              <p class="marginless">
+                Aug 11,2017
+              </p>
+            </div>
+
+            <div id="hindi2" class="songEnglishAndHindi">
+              <a href="#playerLayout">
+                <img src="hindi.jpg" class="songLogo" />
+              </a>
+              <p class="bolder marginless">
+                Tu Hai
+              </p>
+              <p class="marginless">
+                Aug 11,2017
+              </p>
+            </div>
+
+            <div id="hindi3" class="songEnglishAndHindi">
+              <a href="#playerLayout">
+                <img src="hindi.jpg" class="songLogo" />
+              </a>
+              <p class="bolder marginless">
+                Tu Hai
+              </p>
+              <p class="marginless">
+                Aug 11,2017
+              </p>
+            </div>
+
+            <div id="hindi4" class="songEnglishAndHindi">
+              <a href="#playerLayout">
+                <img src="hindi.jpg" class="songLogo" />
+              </a>
+              <p class="bolder marginless">
+                Tu Hai
+              </p>
+              <p class="marginless">
+                Aug 11,2017
+              </p>
+            </div>
+
+            <div id="hindi5" class="songEnglishAndHindi">
+              <a href="#playerLayout">
+                <img src="hindi.jpg" class="songLogo" />
+              </a>
+              <p class="bolder marginless">
+                Tu Hai
+              </p>
+              <p class="marginless">
+                Aug 11,2017
+              </p>
+            </div>
+
+            <div id="hindi6" class="songEnglishAndHindi">
+              <a href="#playerLayout">
+                <img src="hindi.jpg" class="songLogo" />
+              </a>
+              <p class="bolder marginless">
+                Tu Hai
+              </p>
+              <p class="marginless">
+                Aug 11,2017
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Queue section of the page -->
+      <aside class="">
+        <div id="QueueHeader" class="beFlexSpace-between">
+          <div id="QueueHeading" class="bolder verticalcenter">Queue</div>
+
+          <div id="QueuePopDown" class="verticalcenter bolder">
+            <div>
+              <a href="#Queueoption" class=""
+                >Queue <i class="fa-solid fa-caret-down"></i
+              ></a>
+            </div>
+          </div>
+
+          <div id="Queueoption">
+            <div>
+              <a href="#" class="">PlayLists</a>
+            </div>
+            <div>
+              <a href="#">Favourite Songs</a>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <ol id="QueueList">
+            <li>
+              <div class="beFlexSpace-between">
+                <div class="beFlex">
+                  <div>
+                    <img src="master-poster.jpg" alt="songImage" width="30" />
+                  </div>
+                  <div class="verticalcenter">
+                    <div class="songFont bolder">Song</div>
+                    <div class="singerFont bolder">singer</div>
+                  </div>
+                </div>
+                <div class="fontHeader verticalcenter">
+                  <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="beFlexSpace-between">
+                <div class="beFlex">
+                  <div>
+                    <img src="master-poster.jpg" alt="songImage" width="30" />
+                  </div>
+                  <div class="verticalcenter">
+                    <div class="songFont bolder">Song</div>
+                    <div class="singerFont bolder">singer</div>
+                  </div>
+                </div>
+                <div class="fontHeader verticalcenter">
+                  <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="beFlexSpace-between">
+                <div class="beFlex">
+                  <div>
+                    <img src="master-poster.jpg" alt="songImage" width="30" />
+                  </div>
+                  <div class="verticalcenter">
+                    <div class="songFont bolder">Song</div>
+                    <div class="singerFont bolder">singer</div>
+                  </div>
+                </div>
+                <div class="fontHeader verticalcenter">
+                  <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="beFlexSpace-between">
+                <div class="beFlex">
+                  <div>
+                    <img src="master-poster.jpg" alt="songImage" width="30" />
+                  </div>
+                  <div class="verticalcenter">
+                    <div class="songFont bolder">Song</div>
+                    <div class="singerFont bolder">singer</div>
+                  </div>
+                </div>
+                <div class="fontHeader verticalcenter">
+                  <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="beFlexSpace-between">
+                <div class="beFlex">
+                  <div>
+                    <img src="master-poster.jpg" alt="songImage" width="30" />
+                  </div>
+                  <div class="verticalcenter">
+                    <div class="songFont bolder">Song</div>
+                    <div class="singerFont bolder">singer</div>
+                  </div>
+                </div>
+                <div class="fontHeader verticalcenter">
+                  <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="beFlexSpace-between">
+                <div class="beFlex">
+                  <div>
+                    <img src="master-poster.jpg" alt="songImage" width="30" />
+                  </div>
+                  <div class="verticalcenter">
+                    <div class="songFont bolder">Song</div>
+                    <div class="singerFont bolder">singer</div>
+                  </div>
+                </div>
+                <div class="fontHeader verticalcenter">
+                  <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="beFlexSpace-between">
+                <div class="beFlex">
+                  <div>
+                    <img src="master-poster.jpg" alt="songImage" width="30" />
+                  </div>
+                  <div class="verticalcenter">
+                    <div class="songFont bolder">Song</div>
+                    <div class="singerFont bolder">singer</div>
+                  </div>
+                </div>
+                <div class="fontHeader verticalcenter">
+                  <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="beFlexSpace-between">
+                <div class="beFlex">
+                  <div>
+                    <img src="master-poster.jpg" alt="songImage" width="30" />
+                  </div>
+                  <div class="verticalcenter">
+                    <div class="songFont bolder">Song</div>
+                    <div class="singerFont bolder">singer</div>
+                  </div>
+                </div>
+                <div class="fontHeader verticalcenter">
+                  <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="beFlexSpace-between">
+                <div class="beFlex">
+                  <div>
+                    <img src="master-poster.jpg" alt="songImage" width="30" />
+                  </div>
+                  <div class="verticalcenter">
+                    <div class="songFont bolder">Song</div>
+                    <div class="singerFont bolder">singer</div>
+                  </div>
+                </div>
+                <div class="fontHeader verticalcenter">
+                  <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="beFlexSpace-between">
+                <div class="beFlex">
+                  <div>
+                    <img src="master-poster.jpg" alt="songImage" width="30" />
+                  </div>
+                  <div class="verticalcenter">
+                    <div class="songFont bolder">Song</div>
+                    <div class="singerFont bolder">singer</div>
+                  </div>
+                </div>
+                <div class="fontHeader verticalcenter">
+                  <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="beFlexSpace-between">
+                <div class="beFlex">
+                  <div>
+                    <img src="master-poster.jpg" alt="songImage" width="30" />
+                  </div>
+                  <div class="verticalcenter">
+                    <div class="songFont bolder">Song</div>
+                    <div class="singerFont bolder">singer</div>
+                  </div>
+                </div>
+                <div class="fontHeader verticalcenter">
+                  <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="beFlexSpace-between">
+                <div class="beFlex">
+                  <div>
+                    <img src="master-poster.jpg" alt="songImage" width="30" />
+                  </div>
+                  <div class="verticalcenter">
+                    <div class="songFont bolder">Song</div>
+                    <div class="singerFont bolder">singer</div>
+                  </div>
+                </div>
+                <div class="fontHeader verticalcenter">
+                  <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="beFlexSpace-between">
+                <div class="beFlex">
+                  <div>
+                    <img src="master-poster.jpg" alt="songImage" width="30" />
+                  </div>
+                  <div class="verticalcenter">
+                    <div class="songFont bolder">Song</div>
+                    <div class="singerFont bolder">singer</div>
+                  </div>
+                </div>
+                <div class="fontHeader verticalcenter">
+                  <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="beFlexSpace-between">
+                <div class="beFlex">
+                  <div>
+                    <img src="master-poster.jpg" alt="songImage" width="30" />
+                  </div>
+                  <div class="verticalcenter">
+                    <div class="songFont bolder">Song</div>
+                    <div class="singerFont bolder">singer</div>
+                  </div>
+                </div>
+                <div class="fontHeader verticalcenter">
+                  <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="beFlexSpace-between">
+                <div class="beFlex">
+                  <div>
+                    <img src="master-poster.jpg" alt="songImage" width="30" />
+                  </div>
+                  <div class="verticalcenter">
+                    <div class="songFont bolder">Song</div>
+                    <div class="singerFont bolder">singer</div>
+                  </div>
+                </div>
+                <div class="fontHeader verticalcenter">
+                  <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="beFlexSpace-between">
+                <div class="beFlex">
+                  <div>
+                    <img src="master-poster.jpg" alt="songImage" width="30" />
+                  </div>
+                  <div class="verticalcenter">
+                    <div class="songFont bolder">Song</div>
+                    <div class="singerFont bolder">singer</div>
+                  </div>
+                </div>
+                <div class="fontHeader verticalcenter">
+                  <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="beFlexSpace-between">
+                <div class="beFlex">
+                  <div>
+                    <img src="master-poster.jpg" alt="songImage" width="30" />
+                  </div>
+                  <div class="verticalcenter">
+                    <div class="songFont bolder">Song</div>
+                    <div class="singerFont bolder">singer</div>
+                  </div>
+                </div>
+                <div class="fontHeader verticalcenter">
+                  <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
+                </div>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </aside>
+    </main>
+
+    <!-- PLAYERLAYOUT -->
+    <div id="playerLayout" class="">
+      <div id="player" class="beFlex">
+        <!-- playerSongDetails -->
+        <div id="playerSongDetails" class="beFlex playerMargin">
+          <div class="">
+            <img src="jaiho.jpg" alt="songImage" width="60" />
+          </div>
+          <div id="playerSongTitle" class="verticalcenter">
+            <div class="songFont bolder">Jai Ho</div>
+            <div class="">Slumdog Millionaire</div>
+          </div>
+          <div id="heartSymbol" class="verticalcenter">
+            <a href=""
+              ><i class="fa-regular fa-heart" style="color: #f9fafb;"></i
+            ></a>
+          </div>
+
+          <div id="banSymbol" class="verticalcenter">
+            <a href=""
+              ><i class="fa-sharp fa-solid fa-ban" style="color: #ffffff;"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- songControl -->
+        <div id="songControl" class="playerMargin">
+          <div id="playerControls" class="beFlex verticalcenter">
+            <a href=""
+              ><i
+                id="shuffle"
+                class="fa-solid fa-shuffle"
+                style="color: #fcfcfc;"
+              ></i
+            ></a>
+            <a href=""
+              ><i
+                id="prev"
+                class="fa-solid fa-backward-step"
+                style="color: #f5f5f5;"
+              ></i
+            ></a>
+            <a href=""
+              ><i
+                id="playIcon"
+                class="fa-solid fa-play"
+                style="color: #fafafa;"
+              ></i
+            ></a>
+            <a href=""
+              ><i
+                id="next"
+                class="fa-solid fa-forward-step"
+                style="color: #fcfcfc;"
+              ></i
+            ></a>
+            <a href=""
+              ><i
+                id="repeat"
+                class="fa-solid fa-rotate"
+                style="color: #f7f7f7;"
+              ></i
+            ></a>
+          </div>
+
+          <div id="playerBar" class="beFlex verticalcenter">
+            <div id="startTime">1.10</div>
+            <div id="bar" class="">
+              <div id="barIndicator" class=""></div>
+              <div id="barCompleted"></div>
+            </div>
+            <div id="endTime">4.44</div>
+          </div>
+        </div>
+
+        <!-- playerControl -->
+        <div
+          id="playerControl"
+          class="playerMargin verticalcenter"
+          style="width: 100%;"
+        >
+          <div id="addSpeakerExpandSymbol">
+            <a href=""
+              ><span class="material-symbols-outlined margin-30px"
+                >playlist_add</span
+              ></a
+            >
+            <a href=""
+              ><span class="material-symbols-outlined margin-30px"
+                >speaker_group</span
+              ></a
+            >
+            <a href=""
+              ><span class="material-symbols-outlined margin-30px"
+                >expand_content</span
+              ></a
+            >
+          </div>
+
+          <div class="beFlex">
+            <span class="material-symbols-outlined margin-30px-left"
+              >volume_up</span
+            >
+
+            <span id="" class="beFlex verticalcenter">
+              <div id="volumebar" class="">
+                <div id="volumebarIndicator" class=""></div>
+                <div id="volumebarCompleted"></div>
+              </div>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="script.js"></script>
+</html>

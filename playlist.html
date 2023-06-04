@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      Artist
+    </title>
+    <link rel="stylesheet" type="text/css" href="playlist.css" />
+    <script
+      src="https://kit.fontawesome.com/d80069c1ff.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body></body>
+
+  <!-- Navigation header with logo and search, login -->
+  <div id="navHeader" class="beFlex">
+    <div id="logoAndFav" class="beFlex">
+      <div>
+        <img src="logo.jpg" alt="logoImage" width="60" />
+      </div>
+      <div class="verticalcenter">
+        <div class="fontHeader">Ninja</div>
+        <div class="fontHeader bolder">Studio</div>
+      </div>
+      <div class="fontHeader verticalcenter">
+        Favourties
+      </div>
+    </div>
+
+    <div id="searchAndProfile" class="beFlex">
+      <div id="searchbar" class="beFlex verticalcenter">
+        <div id="searchIcon">
+          <i class="fa-solid fa-magnifying-glass" style="color: #f7f7f7;"></i>
+        </div>
+        <div id="search" class="verticalcenter">
+          <input
+            type="text"
+            name="Search"
+            placeholder="Search"
+            style="color: white;"
+          />
+        </div>
+        <div id="mic" class="verticalcenter">
+          <i class="fa-solid fa-microphone" style="color: #f7f7f7;"></i>
+        </div>
+      </div>
+
+      <div id="notification" class="verticalcenter">
+        <i class="fa-solid fa-bell" style="color: #fcfcfd;"></i>
+      </div>
+      <div id="profile">
+        <img src="profileImage.jpg" alt="profileimage" width="50" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Main content with playlist options and queue -->
+  <main class="beFlex">
+    <section class="">
+      <div id="artistSection" class="beFlex">
+        <div id="artistImage">
+          <img src="ar2.jpg" />
+        </div>
+
+        <div id="artistDetail">
+          <div id="artistHeaderAndFollowings" class="beFlexSpace-between">
+            <span id="artistName">AR Rahaman</span>
+            <span id="following">851 Followers</span>
+          </div>
+
+          <div id="artistBio">
+            <p>
+              Allah Rakha Rahman (born A. S. Dileep Kumar; 6 January 1967) is an
+              Indian music composer, record producer, singer, songwriter,
+              musician, multi-instrumentalist and philanthropist, popular for
+              his works in Indian cinema; predominantly in Tamil and Hindi
+              films, with occasional forays in international cinema
+            </p>
+          </div>
+
+          <div id="playAndFollow" class="beFlexSpace-between">
+            <span id="playButton">
+              <button>Play All</button>
+            </span>
+
+            <span id="follow">
+              <button>Follow</button>
+            </span>
+          </div>
+
+          <div id="trackAndAlbum">
+            <p>247 Tracks|128 Albums</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- songlist -->
+
+      <div id="songList">
+        <ol id="QueueSongList">
+          <li>
+            <div class="beFlexSpace-between songs">
+              <a href="#">
+                <div class="beFlex">
+                  <div>
+                    <img src="jaiho.jpg" alt="songImage" width="30" />
+                  </div>
+                  <div class="verticalcenter">
+                    <div class="songFont bolder">Jai Ho</div>
+                    <div class="">Slumdog Millionaire</div>
+                  </div>
+                </div>
+              </a>
+
+              <div class="fontHeader verticalcenter">
+                <a href="#">
+                  <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-solid fa-plus" style="color: #f7f7f8;"></i>
+                </a>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="beFlexSpace-between songs">
+              <a href="#">
+                <div class="beFlex">
+                  <div>
+                    <img src="jaiho.jpg" alt="songImage" width="30" />
+                  </div>
+                  <div class="verticalcenter">
+                    <div class="songFont bolder">Jai Ho</div>
+                    <div class="">Slumdog Millionaire</div>
+                  </div>
+                </div>
+              </a>
+
+              <div class="fontHeader verticalcenter">
+                <a href="#">
+                  <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-solid fa-plus" style="color: #f7f7f8;"></i>
+                </a>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="beFlexSpace-between songs">
+              <a href="#">
+                <div class="beFlex">
+                  <div>
+                    <img src="jaiho.jpg" alt="songImage" width="30" />
+                  </div>
+                  <div class="verticalcenter">
+                    <div class="songFont bolder">Jai Ho</div>
+                    <div class="">Slumdog Millionaire</div>
+                  </div>
+                </div>
+              </a>
+
+              <div class="fontHeader verticalcenter">
+                <a href="#">
+                  <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-solid fa-plus" style="color: #f7f7f8;"></i>
+                </a>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="beFlexSpace-between songs">
+              <a href="#">
+                <div class="beFlex">
+                  <div>
+                    <img src="jaiho.jpg" alt="songImage" width="30" />
+                  </div>
+                  <div class="verticalcenter">
+                    <div class="songFont bolder">Jai Ho</div>
+                    <div class="">Slumdog Millionaire</div>
+                  </div>
+                </div>
+              </a>
+
+              <div class="fontHeader verticalcenter">
+                <a href="#">
+                  <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-solid fa-plus" style="color: #f7f7f8;"></i>
+                </a>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="beFlexSpace-between songs">
+              <a href="#">
+                <div class="beFlex">
+                  <div>
+                    <img src="jaiho.jpg" alt="songImage" width="30" />
+                  </div>
+                  <div class="verticalcenter">
+                    <div class="songFont bolder">Jai Ho</div>
+                    <div class="">Slumdog Millionaire</div>
+                  </div>
+                </div>
+              </a>
+
+              <div class="fontHeader verticalcenter">
+                <a href="#">
+                  <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-solid fa-plus" style="color: #f7f7f8;"></i>
+                </a>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="beFlexSpace-between songs">
+              <a href="#">
+                <div class="beFlex">
+                  <div>
+                    <img src="jaiho.jpg" alt="songImage" width="30" />
+                  </div>
+                  <div class="verticalcenter">
+                    <div class="songFont bolder">Jai Ho</div>
+                    <div class="">Slumdog Millionaire</div>
+                  </div>
+                </div>
+              </a>
+
+              <div class="fontHeader verticalcenter">
+                <a href="#">
+                  <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-solid fa-plus" style="color: #f7f7f8;"></i>
+                </a>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="beFlexSpace-between songs">
+              <a href="#">
+                <div class="beFlex">
+                  <div>
+                    <img src="jaiho.jpg" alt="songImage" width="30" />
+                  </div>
+                  <div class="verticalcenter">
+                    <div class="songFont bolder">Jai Ho</div>
+                    <div class="">Slumdog Millionaire</div>
+                  </div>
+                </div>
+              </a>
+
+              <div class="fontHeader verticalcenter">
+                <a href="#">
+                  <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-solid fa-plus" style="color: #f7f7f8;"></i>
+                </a>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="beFlexSpace-between songs">
+              <a href="#">
+                <div class="beFlex">
+                  <div>
+                    <img src="jaiho.jpg" alt="songImage" width="30" />
+                  </div>
+                  <div class="verticalcenter">
+                    <div class="songFont bolder">Jai Ho</div>
+                    <div class="">Slumdog Millionaire</div>
+                  </div>
+                </div>
+              </a>
+
+              <div class="fontHeader verticalcenter">
+                <a href="#">
+                  <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-solid fa-plus" style="color: #f7f7f8;"></i>
+                </a>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="beFlexSpace-between songs">
+              <a href="#">
+                <div class="beFlex">
+                  <div>
+                    <img src="jaiho.jpg" alt="songImage" width="30" />
+                  </div>
+                  <div class="verticalcenter">
+                    <div class="songFont bolder">Jai Ho</div>
+                    <div class="">Slumdog Millionaire</div>
+                  </div>
+                </div>
+              </a>
+
+              <div class="fontHeader verticalcenter">
+                <a href="#">
+                  <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-solid fa-plus" style="color: #f7f7f8;"></i>
+                </a>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="beFlexSpace-between songs">
+              <a href="#">
+                <div class="beFlex">
+                  <div>
+                    <img src="jaiho.jpg" alt="songImage" width="30" />
+                  </div>
+                  <div class="verticalcenter">
+                    <div class="songFont bolder">Jai Ho</div>
+                    <div class="">Slumdog Millionaire</div>
+                  </div>
+                </div>
+              </a>
+
+              <div class="fontHeader verticalcenter">
+                <a href="#">
+                  <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-solid fa-plus" style="color: #f7f7f8;"></i>
+                </a>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="beFlexSpace-between songs">
+              <a href="#">
+                <div class="beFlex">
+                  <div>
+                    <img src="jaiho.jpg" alt="songImage" width="30" />
+                  </div>
+                  <div class="verticalcenter">
+                    <div class="songFont bolder">Jai Ho</div>
+                    <div class="">Slumdog Millionaire</div>
+                  </div>
+                </div>
+              </a>
+
+              <div class="fontHeader verticalcenter">
+                <a href="#">
+                  <i class="fa-regular fa-heart" style="color: #ffffff;"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-solid fa-plus" style="color: #f7f7f8;"></i>
+                </a>
+              </div>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- aside -->
+
+    <aside>
+      <!-- Similar Artists -->
+      <div id="similarArtist">
+        <div id="similarArtistHeader" class="beFlexSpace-between">
+          <div class="header">
+            Similar Artists
+          </div>
+
+          <div class="viewAll">
+            View All
+          </div>
+        </div>
+
+        <div class="songScroll">
+          <div id="similar1" class="similarSong beFlexSpace-between">
+            <div class="similarReleaseSongLogo">
+              <a href="#"
+                ><img src="master-poster.jpg" alt="songImage" class=""
+              /></a>
+
+              <div class="play">
+                <i class="fa-solid fa-play fa-2xl" style="color: #ffffff;"></i>
+              </div>
+            </div>
+
+            <div id="" class="songNameAndDate verticalcenter">
+              <p class="bolder">
+                Master
+              </p>
+              <p>
+                Aug 11,2017
+              </p>
+            </div>
+
+            <div id="" class="popDownAndDuration">
+              <div>
+                <a href="#songOptionLeft" class=""
+                  ><i
+                    class="fa-solid fa-ellipsis fa-2xl"
+                    style="color: #eee7e7;"
+                  ></i
+                ></a>
+              </div>
+
+              <div id="songOptionLeft">
+                <div>
+                  <a href="#" class="">Play Now</a>
+                </div>
+                <div>
+                  <a href="#">Add To Queue</a>
+                </div>
+
+                <div>
+                  <a href="#">Add To Favourite</a>
+                </div>
+
+                <div>
+                  <a href="#">Get Info</a>
+                </div>
+              </div>
+              <p>4.44</p>
+            </div>
+          </div>
+
+          <div id="similar2" class="similarSong beFlexSpace-between">
+            <div class="similarReleaseSongLogo">
+              <a href="#"
+                ><img src="master-poster.jpg" alt="songImage" class=""
+              /></a>
+
+              <div class="play">
+                <i class="fa-solid fa-play fa-2xl" style="color: #ffffff;"></i>
+              </div>
+            </div>
+
+            <div id="" class="songNameAndDate verticalcenter">
+              <p class="bolder">
+                Master
+              </p>
+              <p>
+                Aug 11,2017
+              </p>
+            </div>
+
+            <div id="" class="popDownAndDuration">
+              <div>
+                <a href="#songOptionLeft" class=""
+                  ><i
+                    class="fa-solid fa-ellipsis fa-2xl"
+                    style="color: #eee7e7;"
+                  ></i
+                ></a>
+              </div>
+
+              <div id="songOptionLeft">
+                <div>
+                  <a href="#" class="">Play Now</a>
+                </div>
+                <div>
+                  <a href="#">Add To Queue</a>
+                </div>
+
+                <div>
+                  <a href="#">Add To Favourite</a>
+                </div>
+
+                <div>
+                  <a href="#">Get Info</a>
+                </div>
+              </div>
+              <p>4.44</p>
+            </div>
+          </div>
+
+          <div id="similar3" class="similarSong beFlexSpace-between">
+            <div class="similarReleaseSongLogo">
+              <a href="#"
+                ><img src="master-poster.jpg" alt="songImage" class=""
+              /></a>
+
+              <div class="play">
+                <i class="fa-solid fa-play fa-2xl" style="color: #ffffff;"></i>
+              </div>
+            </div>
+
+            <div id="" class="songNameAndDate verticalcenter">
+              <p class="bolder">
+                Master
+              </p>
+              <p>
+                Aug 11,2017
+              </p>
+            </div>
+
+            <div id="" class="popDownAndDuration">
+              <div>
+                <a href="#songOptionLeft" class=""
+                  ><i
+                    class="fa-solid fa-ellipsis fa-2xl"
+                    style="color: #eee7e7;"
+                  ></i
+                ></a>
+              </div>
+
+              <div id="songOptionLeft">
+                <div>
+                  <a href="#" class="">Play Now</a>
+                </div>
+                <div>
+                  <a href="#">Add To Queue</a>
+                </div>
+
+                <div>
+                  <a href="#">Add To Favourite</a>
+                </div>
+
+                <div>
+                  <a href="#">Get Info</a>
+                </div>
+              </div>
+              <p>4.44</p>
+            </div>
+          </div>
+
+          <div id="similar4" class="similarSong beFlexSpace-between">
+            <div class="similarReleaseSongLogo">
+              <a href="#"
+                ><img src="master-poster.jpg" alt="songImage" class=""
+              /></a>
+
+              <div class="play">
+                <i class="fa-solid fa-play fa-2xl" style="color: #ffffff;"></i>
+              </div>
+            </div>
+
+            <div id="" class="songNameAndDate verticalcenter">
+              <p class="bolder">
+                Master
+              </p>
+              <p>
+                Aug 11,2017
+              </p>
+            </div>
+
+            <div id="" class="popDownAndDuration">
+              <div>
+                <a href="#songOptionLeft" class=""
+                  ><i
+                    class="fa-solid fa-ellipsis fa-2xl"
+                    style="color: #eee7e7;"
+                  ></i
+                ></a>
+              </div>
+
+              <div id="songOptionLeft">
+                <div>
+                  <a href="#" class="">Play Now</a>
+                </div>
+                <div>
+                  <a href="#">Add To Queue</a>
+                </div>
+
+                <div>
+                  <a href="#">Add To Favourite</a>
+                </div>
+
+                <div>
+                  <a href="#">Get Info</a>
+                </div>
+              </div>
+              <p>4.44</p>
+            </div>
+          </div>
+
+          <div id="similar5" class="similarSong beFlexSpace-between">
+            <div class="similarReleaseSongLogo">
+              <a href="#"
+                ><img src="master-poster.jpg" alt="songImage" class=""
+              /></a>
+
+              <div class="play">
+                <i class="fa-solid fa-play fa-2xl" style="color: #ffffff;"></i>
+              </div>
+            </div>
+
+            <div id="" class="songNameAndDate verticalcenter">
+              <p class="bolder">
+                Master
+              </p>
+              <p>
+                Aug 11,2017
+              </p>
+            </div>
+
+            <div id="" class="popDownAndDuration">
+              <div>
+                <a href="#songOptionLeft" class=""
+                  ><i
+                    class="fa-solid fa-ellipsis fa-2xl"
+                    style="color: #eee7e7;"
+                  ></i
+                ></a>
+              </div>
+
+              <div id="songOptionLeft">
+                <div>
+                  <a href="#" class="">Play Now</a>
+                </div>
+                <div>
+                  <a href="#">Add To Queue</a>
+                </div>
+
+                <div>
+                  <a href="#">Add To Favourite</a>
+                </div>
+
+                <div>
+                  <a href="#">Get Info</a>
+                </div>
+              </div>
+              <p>4.44</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Recent Played -->
+      <div id="recentPlayed">
+        <div id="similarArtistHeader" class="beFlexSpace-between">
+          <div class="header">
+            Recently Played
+          </div>
+
+          <div class="viewAll">
+            View All
+          </div>
+        </div>
+
+        <div class="songScroll">
+          <div id="similar1" class="similarSong beFlexSpace-between">
+            <div class="similarReleaseSongLogo">
+              <a href="#"
+                ><img src="master-poster.jpg" alt="songImage" class=""
+              /></a>
+
+              <div class="play">
+                <i class="fa-solid fa-play fa-2xl" style="color: #ffffff;"></i>
+              </div>
+            </div>
+
+            <div id="" class="songNameAndDate verticalcenter">
+              <p class="bolder">
+                Master
+              </p>
+              <p>
+                Aug 11,2017
+              </p>
+            </div>
+
+            <div id="" class="popDownAndDuration">
+              <div>
+                <a href="#songOptionLeft" class=""
+                  ><i
+                    class="fa-solid fa-ellipsis fa-2xl"
+                    style="color: #eee7e7;"
+                  ></i
+                ></a>
+              </div>
+
+              <div id="songOptionLeft">
+                <div>
+                  <a href="#" class="">Play Now</a>
+                </div>
+                <div>
+                  <a href="#">Add To Queue</a>
+                </div>
+
+                <div>
+                  <a href="#">Add To Favourite</a>
+                </div>
+
+                <div>
+                  <a href="#">Get Info</a>
+                </div>
+              </div>
+              <p>4.44</p>
+            </div>
+          </div>
+
+          <div id="similar2" class="similarSong beFlexSpace-between">
+            <div class="similarReleaseSongLogo">
+              <a href="#"
+                ><img src="master-poster.jpg" alt="songImage" class=""
+              /></a>
+
+              <div class="play">
+                <i class="fa-solid fa-play fa-2xl" style="color: #ffffff;"></i>
+              </div>
+            </div>
+
+            <div id="" class="songNameAndDate verticalcenter">
+              <p class="bolder">
+                Master
+              </p>
+              <p>
+                Aug 11,2017
+              </p>
+            </div>
+
+            <div id="" class="popDownAndDuration">
+              <div>
+                <a href="#songOptionLeft" class=""
+                  ><i
+                    class="fa-solid fa-ellipsis fa-2xl"
+                    style="color: #eee7e7;"
+                  ></i
+                ></a>
+              </div>
+
+              <div id="songOptionLeft">
+                <div>
+                  <a href="#" class="">Play Now</a>
+                </div>
+                <div>
+                  <a href="#">Add To Queue</a>
+                </div>
+
+                <div>
+                  <a href="#">Add To Favourite</a>
+                </div>
+
+                <div>
+                  <a href="#">Get Info</a>
+                </div>
+              </div>
+              <p>4.44</p>
+            </div>
+          </div>
+
+          <div id="similar3" class="similarSong beFlexSpace-between">
+            <div class="similarReleaseSongLogo">
+              <a href="#"
+                ><img src="master-poster.jpg" alt="songImage" class=""
+              /></a>
+
+              <div class="play">
+                <i class="fa-solid fa-play fa-2xl" style="color: #ffffff;"></i>
+              </div>
+            </div>
+
+            <div id="" class="songNameAndDate verticalcenter">
+              <p class="bolder">
+                Master
+              </p>
+              <p>
+                Aug 11,2017
+              </p>
+            </div>
+
+            <div id="" class="popDownAndDuration">
+              <div>
+                <a href="#songOptionLeft" class=""
+                  ><i
+                    class="fa-solid fa-ellipsis fa-2xl"
+                    style="color: #eee7e7;"
+                  ></i
+                ></a>
+              </div>
+
+              <div id="songOptionLeft">
+                <div>
+                  <a href="#" class="">Play Now</a>
+                </div>
+                <div>
+                  <a href="#">Add To Queue</a>
+                </div>
+
+                <div>
+                  <a href="#">Add To Favourite</a>
+                </div>
+
+                <div>
+                  <a href="#">Get Info</a>
+                </div>
+              </div>
+              <p>4.44</p>
+            </div>
+          </div>
+
+          <div id="similar4" class="similarSong beFlexSpace-between">
+            <div class="similarReleaseSongLogo">
+              <a href="#"
+                ><img src="master-poster.jpg" alt="songImage" class=""
+              /></a>
+
+              <div class="play">
+                <i class="fa-solid fa-play fa-2xl" style="color: #ffffff;"></i>
+              </div>
+            </div>
+
+            <div id="" class="songNameAndDate verticalcenter">
+              <p class="bolder">
+                Master
+              </p>
+              <p>
+                Aug 11,2017
+              </p>
+            </div>
+
+            <div id="" class="popDownAndDuration">
+              <div>
+                <a href="#songOptionLeft" class=""
+                  ><i
+                    class="fa-solid fa-ellipsis fa-2xl"
+                    style="color: #eee7e7;"
+                  ></i
+                ></a>
+              </div>
+
+              <div id="songOptionLeft">
+                <div>
+                  <a href="#" class="">Play Now</a>
+                </div>
+                <div>
+                  <a href="#">Add To Queue</a>
+                </div>
+
+                <div>
+                  <a href="#">Add To Favourite</a>
+                </div>
+
+                <div>
+                  <a href="#">Get Info</a>
+                </div>
+              </div>
+              <p>4.44</p>
+            </div>
+          </div>
+
+          <div id="similar5" class="similarSong beFlexSpace-between">
+            <div class="similarReleaseSongLogo">
+              <a href="#"
+                ><img src="master-poster.jpg" alt="songImage" class=""
+              /></a>
+
+              <div class="play">
+                <i class="fa-solid fa-play fa-2xl" style="color: #ffffff;"></i>
+              </div>
+            </div>
+
+            <div id="" class="songNameAndDate verticalcenter">
+              <p class="bolder">
+                Master
+              </p>
+              <p>
+                Aug 11,2017
+              </p>
+            </div>
+
+            <div id="" class="popDownAndDuration">
+              <div>
+                <a href="#songOptionLeft" class=""
+                  ><i
+                    class="fa-solid fa-ellipsis fa-2xl"
+                    style="color: #eee7e7;"
+                  ></i
+                ></a>
+              </div>
+
+              <div id="songOptionLeft">
+                <div>
+                  <a href="#" class="">Play Now</a>
+                </div>
+                <div>
+                  <a href="#">Add To Queue</a>
+                </div>
+
+                <div>
+                  <a href="#">Add To Favourite</a>
+                </div>
+
+                <div>
+                  <a href="#">Get Info</a>
+                </div>
+              </div>
+              <p>4.44</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </main>
+</html>

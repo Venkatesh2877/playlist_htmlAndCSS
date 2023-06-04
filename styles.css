@@ -1,0 +1,607 @@
+body {
+  margin-top: 0;
+  margin-left: 0px;
+  margin-right: 0px;
+  background-color: #0c1027;
+  color: white;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.beFlex {
+  display: flex;
+}
+
+.check {
+  border: 2px solid darkred;
+  background-color: transparent;
+}
+
+.verticalcenter {
+  margin: auto 10px;
+}
+
+.bolder {
+  font-weight: bolder;
+}
+
+.marginless {
+  margin: 0px;
+}
+
+.fontHeader {
+  font-size: 1.5rem;
+  letter-spacing: 0.2;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+}
+
+.beFlexSpace-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.beFlexSpace-spaceAround {
+  display: flex;
+  justify-content: space-around;
+}
+
+/*nav header*/
+#navHeader img {
+  border-radius: 15px;
+}
+
+#logoAndFav {
+  width: 75%;
+}
+#searchAndProfile {
+  width: auto;
+}
+
+#searchAndProfile i {
+  font-size: 1.4rem;
+  background-color: #12193e;
+  padding: 2px;
+}
+
+#search input {
+  font-size: 1.35rem;
+  margin: 0px;
+  background-color: #12193e;
+  border: none;
+  margin-left: -9px;
+}
+
+#mic {
+  margin-left: -9px;
+}
+#notification i {
+  margin-right: 30px;
+}
+
+/*main content*/
+main {
+  position: relative;
+  left: 5%;
+}
+
+/*playlist and options*/
+section {
+  width: 70%;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+section::-webkit-scrollbar {
+  display: none;
+}
+
+#playlist {
+  height: 350px;
+}
+
+.playlist:hover {
+  border: 2px whitesmoke solid;
+  width: 32%;
+}
+
+.playlist {
+  width: 30%;
+  transition: 0.2s ease-in-out;
+}
+
+.playlist a img {
+  width: 100%;
+}
+
+/*latestRelease*/
+.latestReleaseSongLogo {
+  position: relative;
+}
+
+.play {
+  position: absolute;
+  top: 47%;
+  left: 40%;
+  display: none;
+  transition: ease 0.5s;
+}
+
+#latestRelease {
+  height: 250px;
+}
+
+#latestReleaseHeader {
+  margin-bottom: 10px;
+}
+
+#latestRelease p {
+  font-size: 1rem;
+  letter-spacing: 0.2;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  line-height: 1rem;
+}
+
+.latestReleaseRow {
+  position: relative;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.lastestReleaseSong {
+  width: 40%;
+  margin-right: 20px;
+}
+
+.lastestReleaseSong img {
+  width: 95px;
+  height: 95px;
+  border-radius: 5px;
+  transition: ease 0.5s;
+}
+
+.lastestReleaseSong img:hover {
+  border: 2px whitesmoke solid;
+  transform: scale(1.1);
+  opacity: 0.4;
+}
+
+.latestReleaseSongLogo:hover .play {
+  display: block;
+}
+
+.songNameAndDate p {
+  position: relative;
+}
+
+.popDownAndDuration div {
+  margin-bottom: 10px;
+}
+
+.songOptionBottom {
+  position: relative;
+}
+
+#songOptionLeft {
+  display: none;
+  position: absolute;
+  /*    right:62%;*/
+
+  width: 150px;
+  z-index: 1;
+  background-color: whitesmoke;
+  color: black;
+}
+
+#songOptionLeft a {
+  color: black;
+}
+
+#songOptionLeft:target {
+  display: block;
+}
+
+#songOptionLeft div {
+  padding: 10px 0px 10px 15px;
+  font-size: 1rem;
+  border-bottom: black 1px solid;
+}
+
+#songOptionRight {
+  display: none;
+  position: absolute;
+  right: 20%;
+  width: 150px;
+  z-index: 1;
+  background-color: whitesmoke;
+  color: black;
+}
+
+#songOptionRight a {
+  color: black;
+}
+
+#songOptionRight:target {
+  display: block;
+}
+
+#songOptionRight div {
+  padding: 10px 0px 10px 15px;
+  font-size: 1rem;
+  border-bottom: black 1px solid;
+}
+
+/*artist section*/
+#popularArtist {
+  height: 230px;
+  margin-top: 20px;
+}
+
+#artistList {
+  display: flex;
+  justify-content: space-around;
+}
+.artist img {
+  width: 130px;
+  height: 130px;
+  border-radius: 100px;
+  transition: ease 0.2s;
+}
+
+.artist img:hover {
+  transform: scale(1.1);
+  border: 2px whitesmoke solid;
+}
+
+.artist p {
+  text-align: center;
+  font-size: 1rem;
+  letter-spacing: 0.2;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  line-height: 1rem;
+}
+
+/*station section*/
+#station {
+  background-color: #101845;
+  height: 180px;
+}
+
+#stationList {
+  align-items: center;
+}
+
+#moodLogo img {
+  height: 150px;
+  width: 150px;
+  padding: 15px;
+}
+
+#moodList {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.mood {
+  position: relative;
+}
+
+.mood img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  opacity: 0.4;
+  transition: ease 0.2s;
+}
+
+.moodText {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  font-size: 1rem;
+  letter-spacing: 0.2;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  line-height: 1rem;
+}
+
+.mood img:hover {
+  transform: scale(1.1);
+  border: 2px whitesmoke solid;
+}
+
+/*Genre*/
+
+#genreList {
+  margin-top: 20px;
+  justify-content: space-between;
+  height: 150px;
+}
+
+#genreList img {
+  height: 100%;
+  width: 300px;
+  opacity: 0.4;
+  transition: ease 0.2s;
+}
+
+.genre {
+  position: relative;
+}
+
+.genreText {
+  position: absolute;
+  top: 45%;
+  left: 35%;
+  font-size: 1.5rem;
+  letter-spacing: 0.2;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  line-height: 1rem;
+}
+
+#genreList img:hover {
+  transform: scale(1.1);
+  border: 2px whitesmoke solid;
+}
+
+/*Lastest English and Hindi*/
+
+#lastestEnglish {
+  margin-top: 20px;
+  height: 230px;
+}
+
+#lastestHindi {
+  margin-top: 20px;
+}
+.songEnglishAndHindi {
+  width: 14%;
+}
+
+.songLogo {
+  width: 100%;
+  border-radius: 20%;
+  transition: ease 0.2s;
+}
+
+.songLogo:hover {
+  transform: scale(1.1);
+  border: 2px whitesmoke solid;
+}
+
+/*Queue*/
+aside {
+  position: relative;
+  width: 25%;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+aside::-webkit-scrollbar {
+  display: none;
+}
+
+#QueueHeader {
+  margin-bottom: 25px;
+}
+
+#QueueHeading {
+  font-size: 2rem;
+  font-family: sans-serif;
+}
+
+#QueuePopDown {
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #3c9d74;
+}
+
+#Queueoption {
+  display: none;
+  position: absolute;
+  right: 5%;
+  top: 3%;
+  width: 150px;
+  z-index: 1;
+  background-color: whitesmoke;
+  color: black;
+}
+#Queueoption a {
+  color: black;
+}
+
+#Queueoption:target {
+  display: block;
+}
+
+#Queueoption div {
+  padding: 10px 0px 10px 15px;
+  font-size: 1rem;
+  border-bottom: black 1px solid;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/*PlayerLAyout*/
+
+#playerLayout a {
+  text-decoration: none;
+  color: white;
+}
+
+.playerMargin {
+  margin-right: 60px;
+  margin-top: 5px;
+}
+
+#playerLayout {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  margin: auto;
+  background-color: black;
+  height: 9%;
+  display: none;
+}
+
+#playerLayout:target {
+  display: block;
+}
+
+#player {
+  position: relative;
+  left: 5%;
+  width: 80%;
+}
+
+#playerControls {
+  height: 50%;
+}
+#playerLayout i {
+  margin: 0px 5px 10px 0px;
+  font-size: 1.4rem;
+}
+
+#playerControls i {
+  margin: 5px 30px;
+  font-size: 1.4rem;
+}
+
+#playIcon {
+  transform: scale(1.2);
+  border: 1px solid white;
+  padding: 7px 4px 4px 7px;
+  border-radius: 50%;
+}
+
+#playerBar {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+#bar {
+  margin: 5px;
+  height: 4px;
+  width: 90%;
+  border-radius: 4px;
+  background-color: dimgrey;
+  position: relative;
+}
+
+#barIndicator {
+  position: absolute;
+  top: -6px;
+  left: 75px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: whitesmoke;
+  z-index: 2;
+}
+
+#barCompleted {
+  position: absolute;
+  height: 4px;
+  width: 25%;
+  border-radius: 4px;
+  background-color: darkgreen;
+}
+
+#playerControl {
+  margin-top: 5px;
+}
+
+.margin-30px {
+  margin: 0px 30px;
+}
+.margin-30px-left {
+  margin-left: 30px;
+  margin-right: 0px;
+}
+
+#volumebar {
+  margin: 5px;
+  height: 4px;
+  width: 50px;
+  border-radius: 4px;
+  background-color: dimgrey;
+  position: relative;
+}
+
+#volumebarIndicator {
+  position: absolute;
+  top: -6px;
+  left: 5px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: whitesmoke;
+  z-index: 2;
+}
+
+#volumebarCompleted {
+  position: absolute;
+  height: 4px;
+  width: 25%;
+  border-radius: 4px;
+  background-color: darkgreen;
+}
+
+/*meta tags*/
+@media screen and (max-width: 600px) {
+  aside {
+    width: 0;
+  }
+
+  section {
+    width: 95%;
+  }
+
+  #search input {
+    width: 0;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  #popularArtist {
+    height: auto;
+  }
+
+  #artistList {
+    flex-wrap: wrap;
+  }
+
+  #station {
+    height: auto;
+  }
+
+  #moodList {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  #playerSongTitle,
+  #heartSymbol,
+  #banSymbol {
+    width: 0;
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #genreList {
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: space-around;
+  }
+  #addSpeakerExpandSymbol {
+    display: none;
+  }
+}
